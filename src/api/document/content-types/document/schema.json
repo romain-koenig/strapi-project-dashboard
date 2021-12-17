@@ -4,7 +4,8 @@
   "info": {
     "singularName": "document",
     "pluralName": "documents",
-    "displayName": "Document"
+    "displayName": "Document",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -33,6 +34,18 @@
       "relation": "manyToOne",
       "target": "api::project.project",
       "inversedBy": "documents"
+    },
+    "Attached": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "link": {
+      "type": "string"
     }
   }
 }
